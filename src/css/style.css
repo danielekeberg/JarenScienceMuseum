@@ -1,0 +1,161 @@
+header {
+    background-color: #000;
+    height: 150px;
+    width: 100%;
+    border: none;
+}
+
+.logo {
+    height: 150px;
+    position: absolute;
+    left: 390px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    right: 390px;
+    top: 131px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li:last-child {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.tickets {
+    display: flex;
+    justify-content: center;
+}
+
+.tickets a {
+    color: #000;
+}
+
+section img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 44;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location,
+.opening-times {
+    margin: 0 140px;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #000;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer-section a:hover {
+    color: #555;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 50px 250px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.activities a {
+    text-decoration: none;
+    color: #000;
+}
+
+.activities a div {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.activities img {
+    max-width: 100%;
+    height: 230px;
+    display: block;
+}
+
+.activities h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.activities p {
+    margin-top: 5px;
+}
+
+.virtual_science_experiments,
+.science_games_puzzles,
+.diy_science_projects,
+.virtual_science_tours {
+    width: 370px;
+    padding: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
