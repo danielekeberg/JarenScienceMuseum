@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Jaren Science Museum">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Jaren Science Museum</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="assets/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="groups.html">Groups</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="tickets">
+            <h3><a href="tickets.html">BOOK YOUR TICKETS NOW</a> TO VISIT THE MUSEUM. SCHOOLS AND GROUPS CAN BOOK TICKETS <a href="groups.html">HERE.</a></h3>
+        </div>
+
+        <section>
+            <img src="assets/daypass.jpg" alt="Background picture of science museum activities">
+            <div class="overlay-text">
+                <h1>DAY PASS</h1>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="steps">
+                <div class="step active">1 <br> Visitors</div>
+                <div class="step">2 <br> Date</div>
+                <div class="step">3 <br> Payment</div>
+                <div class="step">4 <br> Confirmation</div>
+            </div>
+
+            <div class="content">
+                <div class="visitor-controls">
+                    <div class="visitor-type">
+                        <span>Children</span>
+                        <div class="control-buttons">
+                            <button class="minus">-</button>
+                            <input type="text" value="2" readonly>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="visitor-type">
+                        <span>Adult</span>
+                        <div class="control-buttons">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" readonly>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="visitor-type">
+                        <span>Senior</span>
+                        <div class="control-buttons">
+                            <button class="minus">-</button>
+                            <input type="text" value="0" readonly>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Your cart</h3>
+                    <table>
+                        <tr>
+                            <td>Adult</td>
+                            <td>NOK 100</td>
+                        </tr>
+                        <tr>
+                            <td>Children x2</td>
+                            <td>NOK 100</td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td>NOK 60</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>NOK 140</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="discount">
+                <div class="discount-code">
+                    <label for="discount">Discount code</label>
+                    <input type="text" id="discount" placeholder="Discount code">
+                    <button class="apply">Apply</button>
+                </div>
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-sections">
+                <div class="footer-section footer-location">
+                    <h3>LOCATION</h3>
+                    <p>Jarenvegen 67, 2770 Jaren</p>
+                </div>
+    
+                <div class="footer-section footer-opening-times">
+                    <h3>OPENING TIMES</h3>
+                    <p>Open daily 10:00 - 18:00</p>
+                </div>
+    
+                <div class="footer-section quick-links">
+                    <h3>QUICK LINKS</h3>
+                    <a href="contact.html"><p>Contact us</p></a>
+                    <a href="about.html"><p>About us</p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
