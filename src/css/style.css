@@ -715,6 +715,17 @@ button.continue:hover {
     background-color: #285a8b;
 }
 
+.about-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.about-wrapper div {
+    margin-bottom: 20px;
+}
+
+
 ::-webkit-scrollbar {
     display: none;
 }
