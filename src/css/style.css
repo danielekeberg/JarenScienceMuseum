@@ -6,17 +6,15 @@ body {
 
 header {
     background-color: #000;
+    color: #fff;
     height: 150px;
     width: 100%;
-    border: none;
 }
 
 .logo {
     height: 100px;
     position: absolute;
     left: 410px;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul {
@@ -33,18 +31,17 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    margin-right: 40px;
+    margin-right: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
-    display: inline;
 }
 
 nav ul li a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #000;
 }
 
@@ -68,15 +65,11 @@ section img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff;
     font-weight: bold;
     text-align: center;
     padding: 10px 20px;
-    text-shadow: 
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    text-shadow: 0 0 5px #000;
 }
 
 .info-container {
@@ -108,20 +101,11 @@ section img {
     text-align: center;
 }
 
-.footer-section h3 {
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.footer-section p {
-    color: white;
-}
-
+.footer-section h3,
+.footer-section p,
 .footer-section a {
-    text-decoration: none;
     color: #fff;
-    display: block;
-    margin-top: 5px;
+    margin: 10px 0;
 }
 
 .footer-section a:hover {
@@ -131,10 +115,9 @@ section img {
 .activities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     gap: 50px 250px;
-    margin: 0 auto;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .activities a {
@@ -154,8 +137,7 @@ section img {
 }
 
 .activities h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
 }
 
 .activities p {
@@ -180,7 +162,7 @@ section img {
 
 .contact-form h2 {
     margin-top: 0;
-    font-size: 24pxx;
+    font-size: 24px;
     color: #333;
 }
 
@@ -196,7 +178,7 @@ section img {
 
 .form-group input,
 .form-group textarea {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -211,13 +193,13 @@ section img {
 
 .send-button {
     background-color: #3C54D2;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2 ease;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .send-button:hover {
@@ -312,7 +294,6 @@ section img {
     margin: 20px;
 }
 
-
 .visit h1 {
     font-size: 28px;
 }
@@ -323,6 +304,7 @@ section img {
 .entrance {
     padding: 20px;
 }
+
 .group-ticket {
     display: flex;
     overflow: hidden;
@@ -333,7 +315,6 @@ section img {
 .group-content {
     flex: 3;
     padding: 40px;
-    text-align: left;
 }
 
 .group-content h1 {
@@ -343,8 +324,7 @@ section img {
 
 .group-content h2 {
     font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .group-content p {
@@ -403,13 +383,10 @@ section img {
     color: #aaa;
 }
 
-.step.active {
-    color: #337ab7;
-    border-bottom: 2px solid #337ab7;
-}
-
+.step.active,
 .step.completed {
     color: #337ab7;
+    border-bottom-color: #337ab7;
 }
 
 .step a {
@@ -472,7 +449,7 @@ section img {
 }
 
 .cart-summary h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     font-size: 16px;
 }
 
@@ -561,8 +538,7 @@ button.continue:hover {
 }
 
 .month h2 {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     font-size: 18px;
 }
 
@@ -572,23 +548,21 @@ button.continue:hover {
     gap: 10px;
 }
 
-.day {
+.day,
+.date {
     background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .date {
-    background: #a9a9a9;
+    background-color: #a9a9a9;
 }
 
 .date:hover {
     background-color: #8d8d8d;
-}
-
-.day, .date {
-    padding: 10px;
-    border-radius: 10px;
-    border-radius: 4px;
-    font-size: 14px;
+    cursor: pointer;
 }
 
 .date.selected {
@@ -598,11 +572,6 @@ button.continue:hover {
 
 .date.selected:hover {
     background-color: #285a8b;
-}
-
-.date:hover,
-.date.selected:hover {
-    cursor: pointer;
 }
 
 .form-section {
@@ -646,13 +615,7 @@ button.continue:hover {
 }
 
 .form-group.terms input[type="checkbox"] {
-    flex: 0;
     margin-right: 5px;
-    width: auto;
-}
-
-.form-group.terms label {
-    margin: 0;
 }
 
 .form-group label a {
@@ -725,7 +688,164 @@ button.continue:hover {
     margin-bottom: 20px;
 }
 
-
 ::-webkit-scrollbar {
     display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .logo {
+        left: 350px;
+    }
+    
+    nav ul {
+        right: 350px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location,
+    .opening-times {
+        margin: 0 80px;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .activities {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .virtual_science_experiments,
+    .science_games_puzzles,
+    .diy_science_projects,
+    .virtual_science_tours {
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        left: 300px;
+    }
+    
+    nav ul {
+        right: 300px;
+        top: 100px;
+    }
+
+    .info-container {
+        align-items: center;
+    }
+
+    .location,
+    .opening-times {
+        margin: 0 40px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .activities {
+        gap: 20px;
+    }
+
+    .contact-form {
+        width: 300px;
+    }
+
+    .ticket {
+        max-width: 150px;
+    }
+
+    .cart-summary {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 120px;
+    }
+
+    .logo {
+        height: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul {
+        right: 50%;
+        transform: translateX(50%);
+        top: 90px;
+    }
+
+    .location,
+    .opening-times {
+        margin: 0 20px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .activities {
+        gap: 10px;
+    }
+
+    .contact-form {
+        width: 250px;
+    }
+
+    .ticket {
+        max-width: 120px;
+    }
+
+    .cart-summary {
+        margin-left: 50px;
+    }
+
+    .steps,
+    .content,
+    .visit-info,
+    .opening-times-info,
+    .directions,
+    .entrance {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visitor-controls,
+    .cart-summary {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        position: flex;
+    }
+
+    .overlay-text {
+        font-size: 14px;
+        width: 500px;
+
+    }
+
+    .overlay-text h2{
+        display: none;
+    }
+
+    section img {
+        display: none;
+    }
+
+    .tickets {
+        font-size: 8px;
+    }
+
+    .activities img {
+        max-width: 50%;
+        max-height: 50%;
+    }
 }
