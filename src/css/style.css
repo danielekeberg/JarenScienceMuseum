@@ -1,20 +1,24 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background: #000;
     height: 150px;
-    width: 100%;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
     height: 100px;
+    position: absolute;
+    top: 15px;
     left: 410px;
 }
 
@@ -230,6 +234,13 @@ section img {
 .send-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(60, 84, 210, 0.4);
+}
+
+.tickets-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
 }
 
 .wrapper {
@@ -711,155 +722,239 @@ button.continue:hover {
     display: none;
 }
 
-
 @media (max-width: 1200px) {
     .logo {
-        left: 350px;
+        position: absolute;
+        left: 100px;
     }
-    
+
     nav ul {
-        right: 350px;
+        top: 113px;
+        right: 30px;
+        margin: 10px 0 10px 0;
     }
 
-    .info-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .location,
-    .opening-times {
-        margin: 0 80px;
-        padding: 20px;
-        font-size: 18px;
+    nav ul li {
+        margin-right: 30px;
     }
 
     .activities {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
+        justify-items: center;
+        padding-top: 20px;
     }
 
-    .virtual_science_experiments,
-    .science_games_puzzles,
-    .diy_science_projects,
-    .virtual_science_tours {
-        width: auto;
-    }
 }
 
 @media (max-width: 992px) {
-    .tickets {
-        font-size: 12px;
+    header {
+        height: 130px;
     }
 
-    section img {
+    .container {
+        position: absolute;
+        top: 550px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        top: 93px;
+        right: 30px;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    .logo {
+        left: 100px;
+        height: 75px;
+    }
+
+    .tickets {
+        font-size: 12px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .image-section img {
+        height: 300px;
+        top: 5px;
+    }
+
+    .overlay-text h2 {
         display: none;
     }
 
     .overlay-text {
-        color: #000;
-        text-shadow: none;
-        font-size: 13px;
+        font-size: 14px;
+        height: 250px;
     }
 
-    header {
-        background: black;
-        color: white;
-        padding: 20px;
-        text-align: center;
+    .info-container .location,
+    .info-container .opening-times{
+        font-size: 18px;
+        margin: 0;
+        height: 10px;
+        padding-top: 0;
     }
 
-    header nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
+    .info-container .location {
+        position: absolute;
+        left: 10px;
+        top: 490px;
+    }
+
+    .info-container .opening-times {
+        position: absolute;
+        right: 10px;
+        top: 490px;
+    }
+
+    .wrapper {
+        height: 450px;
+    }
+
+    .tickets-wrapper {
+        height: 200px;
     }
 }
 
 @media (max-width: 768px) {
-    section img {
-        display: none;
-    }
-
     header {
-        height: 120px;
+        height: 125px;
     }
 
     .logo {
-        height: 80px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: absolute;
+        left: 10px;
+        height: 75px;
     }
 
-    nav ul {
-        right: 50%;
-        transform: translateX(50%);
-        top: 90px;
+    nav ul li {
+        margin-right: -15px;
     }
 
-    .location,
-    .opening-times {
-        margin: 0 20px;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .activities {
-        gap: 10px;
-    }
-
-    .contact-form {
-        width: 250px;
-    }
-
-    .ticket {
-        max-width: 120px;
-    }
-
-    .cart-summary {
-        margin-left: 50px;
-    }
-
-    .steps,
-    .content,
-    .visit-info,
-    .opening-times-info,
-    .directions,
-    .entrance {
-        flex-direction: column;
+    .tickets {
+        font-size: 9px;
+        height: 30px;
         align-items: center;
     }
 
-    .visitor-controls,
-    .cart-summary {
+    .overlay-text {
+        display: flex;
+    }
+
+    .info-container .location,
+    .info-container .opening-times{
+        font-size: 13px;
         margin: 0;
+        height: 10px;
+        padding-top: 0;
+    }
+
+    .info-container .location {
+        position: absolute;
+        left: 10px;
+        top: 490px;
+    }
+
+    .info-container .opening-times {
+        position: absolute;
+        right: 10px;
+        top: 490px;
+    }
+    
+    .activities {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        padding-top: 20px;
+    }
+
+    .activities > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        font-size: 10px;
+    }
+
+    .tickets-wrapper {
+        height: 200px;
+    }
+    .date-selection .continue {
+        position: absolute;
+        top: 290px;
+        right: 115px;
     }
 }
 
 @media (max-width: 576px) {
-    nav {
-        position: flex;
+    .container {
+        position: absolute;
+        top: 450px;
     }
 
-    .overlay-text {
-        font-size: 14px;
-        width: 500px;
-
+    header {
+        height: 110px;
     }
 
-    .overlay-text h2{
-        display: none;
-    }
-
-    section img {
-        display: none;
+    .logo {
+        position: absolute;
+        left: 10px;
+        height: 75px;
     }
 
     .tickets {
         font-size: 8px;
+        height: 30px;
+        align-items: center;
+    }
+    
+    .image-section img {
+        height: 200px;
     }
 
-    .activities img {
-        max-width: 50%;
-        max-height: 50%;
+    .overlay-text {
+        font-size: 10px;
+        position: absolute;
+        top: 80px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    nav ul {
+        top: 75px;
+        right: 0;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin-right: -20px;
+    }
+    .info-container .location,
+    .info-container .opening-times{
+        font-size: 10px;
+        margin: 0;
+        height: 10px;
+        padding-top: 0;
+    }
+
+    .info-container .location {
+        position: absolute;
+        left: 5px;
+        top: 370px;
+    }
+
+    .info-container .opening-times {
+        position: absolute;
+        right: 5px;
+        top: 370px;
     }
 }
