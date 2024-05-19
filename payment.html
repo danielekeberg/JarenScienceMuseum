@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Jaren Science Museum">
+    <meta name="description" content="Complete your ticket purchase for the Jaren Science Museum. Secure and easy payment options available, including credit card and PayPal. Ensure your spot and get ready for an exciting visit. Confirm your payment now!">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Jaren Science Museum</title>
+    <title>Payment - Jaren Science Museum</title>
 </head>
 <body>
     <header>
@@ -34,10 +34,11 @@
             </div>
         </section>
 
+        <div class="wrapper">
         <div class="container">
             <div class="steps">
-                <div class="step completed">1 <br> Visitors</div>
-                <div class="step completed">2 <br> Date</div>
+                <div class="step completed">1 <br> <a href="daypass.html">Visitors</a></div>
+                <div class="step completed">2 <br> <a href="choose_date.html">Date</a></div>
                 <div class="step active">3 <br> Payment</div>
                 <div class="step">4 <br> Confirmation</div>
             </div>
@@ -71,8 +72,19 @@
                         <input type="tel" id="phone-number" placeholder="Phone number">
                     </div>
                 </div>
+                <div class="form-group payment-method">
+                    <label>Payment Method</label>
+                    <div class="credit-card-option">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div class="paypal-option">
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                </div>
 
-                <div class="form-group">
+                <div class="form-group terms">
                     <input type="checkbox" id="terms">
                     <label for="terms">I have read and agreed to the <a href="#">terms and conditions</a></label>
                 </div>
@@ -81,7 +93,7 @@
             <a href="confirmation.html">
                 <button class="continue">Continue</button>
             </a>
-
+        </div>
         </div>
     </main>
 

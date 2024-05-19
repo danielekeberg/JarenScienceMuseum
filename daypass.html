@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Jaren Science Museum">
+    <meta name="description" content="Get your Day Pass for the Jaren Science Museum and enjoy a full day of exploration and discovery. Perfect for families and individuals, our day pass offers unlimited access to all exhibits and activities. Book your Day Pass now!">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Jaren Science Museum</title>
+    <title>Day Pass - Jaren Science Museum</title>
 </head>
 <body>
     <header>
@@ -33,73 +33,74 @@
                 <h1>DAY PASS</h1>
             </div>
         </section>
+        <div class="wrapper">
+            <div class="container">
+                <div class="steps">
+                    <div class="step active">1 <br> Visitors</div>
+                    <div class="step">2 <br> Date</div>
+                    <div class="step">3 <br> Payment</div>
+                    <div class="step">4 <br> Confirmation</div>
+                </div>
 
-        <div class="container">
-            <div class="steps">
-                <div class="step active">1 <br> Visitors</div>
-                <div class="step">2 <br> Date</div>
-                <div class="step">3 <br> Payment</div>
-                <div class="step">4 <br> Confirmation</div>
-            </div>
-
-            <div class="content">
-                <div class="visitor-controls">
-                    <div class="visitor-type">
-                        <span>Children</span>
-                        <div class="control-buttons">
-                            <button class="minus">-</button>
-                            <input type="text" value="2" readonly>
-                            <button class="plus">+</button>
+                <div class="content">
+                    <div class="visitor-controls">
+                        <div class="visitor-type">
+                            <span>Children</span>
+                            <div class="control-buttons">
+                                <button class="minus">-</button>
+                                <input type="text" value="2" readonly>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                        <div class="visitor-type">
+                            <span>Adult</span>
+                            <div class="control-buttons">
+                                <button class="minus">-</button>
+                                <input type="text" value="1" readonly>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                        <div class="visitor-type">
+                            <span>Senior</span>
+                            <div class="control-buttons">
+                                <button class="minus">-</button>
+                                <input type="text" value="0" readonly>
+                                <button class="plus">+</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="visitor-type">
-                        <span>Adult</span>
-                        <div class="control-buttons">
-                            <button class="minus">-</button>
-                            <input type="text" value="1" readonly>
-                            <button class="plus">+</button>
-                        </div>
-                    </div>
-                    <div class="visitor-type">
-                        <span>Senior</span>
-                        <div class="control-buttons">
-                            <button class="minus">-</button>
-                            <input type="text" value="0" readonly>
-                            <button class="plus">+</button>
-                        </div>
+
+                    <div class="cart-summary">
+                        <h3>Your cart</h3>
+                        <table>
+                            <tr>
+                                <td>Adult</td>
+                                <td>NOK 100</td>
+                            </tr>
+                            <tr>
+                                <td>Children x2</td>
+                                <td>NOK 100</td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td>NOK 60</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>NOK 140</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
-                <div class="cart-summary">
-                    <h3>Your cart</h3>
-                    <table>
-                        <tr>
-                            <td>Adult</td>
-                            <td>NOK 100</td>
-                        </tr>
-                        <tr>
-                            <td>Children x2</td>
-                            <td>NOK 100</td>
-                        </tr>
-                        <tr>
-                            <td>Discount</td>
-                            <td>NOK 60</td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td>NOK 140</td>
-                        </tr>
-                    </table>
+                <div class="discount">
+                    <div class="discount-code">
+                        <label for="discount">Discount code</label>
+                        <input type="text" id="discount" placeholder="Discount code">
+                        <button class="apply">Apply</button>
+                    </div>
+                    <a href="choose_date.html"><button class="continue">Continue</button></a>
                 </div>
-            </div>
-
-            <div class="discount">
-                <div class="discount-code">
-                    <label for="discount">Discount code</label>
-                    <input type="text" id="discount" placeholder="Discount code">
-                    <button class="apply">Apply</button>
-                </div>
-                <a href="choose_date.html"><button class="continue">Continue</button></a>
             </div>
         </div>
     </main>
