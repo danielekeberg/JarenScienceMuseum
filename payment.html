@@ -9,17 +9,17 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
+        <div>
             <img class="logo" src="assets/logo.png" alt="Logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="visit.html">Visit</a></li>
-                    <li><a href="groups.html">Groups</a></li>
-                    <li><a href="tickets.html">Tickets</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="groups.html">Groups</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -35,65 +35,65 @@
         </section>
 
         <div class="wrapper">
-        <div class="container">
-            <div class="steps">
-                <div class="step completed">1 <br> <a href="daypass.html">Visitors</a></div>
-                <div class="step completed">2 <br> <a href="choose_date.html">Date</a></div>
-                <div class="step active">3 <br> Payment</div>
-                <div class="step">4 <br> Confirmation</div>
+            <div class="container">
+                <div class="steps">
+                    <div class="step completed">1 <br> <a href="daypass.html">Visitors</a></div>
+                    <div class="step completed">2 <br> <a href="choose_date.html">Date</a></div>
+                    <div class="step active">3 <br> Payment</div>
+                    <div class="step">4 <br> Confirmation</div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="first-name">First name*</label>
+                            <input type="text" id="first-name" placeholder="First name">
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last name*</label>
+                            <input type="text" id="first-name" placeholder="Last name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-field">
+                            <label for="repeat-email">Repeat e-mail*</label>
+                            <input type="email" id="repeat-email" placeholder="Repeat e-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="phone-number">Phone number*</label>
+                            <input type="tel" id="phone-number" placeholder="Phone number">
+                        </div>
+                    </div>
+                    <div class="form-group payment-method">
+                        <label>Payment Method</label>
+                        <div class="credit-card-option">
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                            <label for="credit-card">Credit Card</label>
+                        </div>
+                        <div class="paypal-option">
+                            <input type="radio" id="paypal" name="payment-method" value="paypal">
+                            <label for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I have read and agreed to the <a href="#">terms and conditions</a></label>
+                    </div>
+                </div>
+
+                <a href="confirmation.html">
+                    <button class="continue">Continue</button>
+                </a>
             </div>
-
-            <div class="form-section">
-                <div class="form-group">
-                    <div class="form-field">
-                        <label for="first-name">First name*</label>
-                        <input type="text" id="first-name" placeholder="First name">
-                    </div>
-                    <div class="form-field">
-                        <label for="last-name">Last name*</label>
-                        <input type="text" id="first-name" placeholder="Last name">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="form-field">
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" placeholder="E-mail">
-                    </div>
-                    <div class="form-field">
-                        <label for="repeat-email">Repeat e-mail*</label>
-                        <input type="email" id="repeat-email" placeholder="Repeat e-mail">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="form-field">
-                        <label for="phone-number">Phone number*</label>
-                        <input type="tel" id="phone-number" placeholder="Phone number">
-                    </div>
-                </div>
-                <div class="form-group payment-method">
-                    <label>Payment Method</label>
-                    <div class="credit-card-option">
-                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-                        <label for="credit-card">Credit Card</label>
-                    </div>
-                    <div class="paypal-option">
-                        <input type="radio" id="paypal" name="payment-method" value="paypal">
-                        <label for="paypal">PayPal</label>
-                    </div>
-                </div>
-
-                <div class="form-group terms">
-                    <input type="checkbox" id="terms">
-                    <label for="terms">I have read and agreed to the <a href="#">terms and conditions</a></label>
-                </div>
-            </div>
-
-            <a href="confirmation.html">
-                <button class="continue">Continue</button>
-            </a>
-        </div>
         </div>
     </main>
 
