@@ -1,6 +1,6 @@
 # Daniel Ekeberg Semester Project 1
 
-![image](https://i.ibb.co/DKyV0Ng/image-1.png)
+![image](https://i.ibb.co/yVWfcQX/image-2.png)
 
 ## Description
 
