@@ -302,6 +302,11 @@ section img {
     cursor: pointer;
 }
 
+.ticket a {
+    text-decoration: none;
+    color: #fff;;
+}
+
 .ticket button:hover {
     background-color: #285a8b;
 }
@@ -886,10 +891,34 @@ button.continue:hover {
     .tickets-wrapper {
         height: 200px;
     }
+
     .date-selection .continue {
         position: absolute;
         top: 290px;
         right: 115px;
+    }
+
+    .image-section {
+        height: 250px;
+    }
+
+    .tickets h3 {
+        padding: 10px;
+        line-height: 1.5;
+        font-size: 10px;
+    }
+
+    .group-content {
+        margin-top: 575px;
+        height: 100%;
+    }
+
+    .mobile-margin {
+        margin-top: 650px;
+    }
+
+    .nav-button {
+        display: none;
     }
 }
 
